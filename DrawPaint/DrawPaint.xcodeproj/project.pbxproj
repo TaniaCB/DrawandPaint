@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		238DD82B1FB38B1100DA8AB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 238DD82A1FB38B1100DA8AB3 /* main.m */; };
+		238DD82E1FB38B1100DA8AB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 238DD82D1FB38B1100DA8AB3 /* AppDelegate.m */; };
+		238DD8311FB38B1100DA8AB3 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 238DD8301FB38B1100DA8AB3 /* DrawViewController.m */; };
+		238DD8341FB38B1100DA8AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8321FB38B1100DA8AB3 /* Main.storyboard */; };
+		238DD8361FB38B1100DA8AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8351FB38B1100DA8AB3 /* Assets.xcassets */; };
+		238DD8391FB38B1100DA8AB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8371FB38B1100DA8AB3 /* LaunchScreen.storyboard */; };
+		238DD8491FB38B4F00DA8AB3 /* BezierLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 238DD8421FB38B4F00DA8AB3 /* BezierLine.m */; };
+		238DD84A1FB38B4F00DA8AB3 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 238DD8441FB38B4F00DA8AB3 /* Line.m */; };
+		238DD84C1FB38B4F00DA8AB3 /* LineDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 238DD8481FB38B4F00DA8AB3 /* LineDrawView.m */; };
+		238DD84F1FB3968F00DA8AB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238DD84E1FB3968F00DA8AB3 /* CoreGraphics.framework */; };
+		238DD8631FB39C7C00DA8AB3 /* Color-Black-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8511FB39C7C00DA8AB3 /* Color-Black-Selected.png */; };
+		238DD8641FB39C7C00DA8AB3 /* Color-Black.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8521FB39C7C00DA8AB3 /* Color-Black.png */; };
+		238DD8651FB39C7C00DA8AB3 /* Color-Blue-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8531FB39C7C00DA8AB3 /* Color-Blue-Selected.png */; };
+		238DD8661FB39C7C00DA8AB3 /* Color-Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8541FB39C7C00DA8AB3 /* Color-Blue.png */; };
+		238DD8671FB39C7C00DA8AB3 /* Color-Green-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8551FB39C7C00DA8AB3 /* Color-Green-Selected.png */; };
+		238DD8681FB39C7C00DA8AB3 /* Color-Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8561FB39C7C00DA8AB3 /* Color-Green.png */; };
+		238DD8691FB39C7C00DA8AB3 /* Color-Red-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8571FB39C7C00DA8AB3 /* Color-Red-Selected.png */; };
+		238DD86A1FB39C7C00DA8AB3 /* Color-Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8581FB39C7C00DA8AB3 /* Color-Red.png */; };
+		238DD86B1FB39C7C00DA8AB3 /* Color-Yellow-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8591FB39C7C00DA8AB3 /* Color-Yellow-Selected.png */; };
+		238DD86C1FB39C7C00DA8AB3 /* Color-Yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD85A1FB39C7C00DA8AB3 /* Color-Yellow.png */; };
+		238DD86D1FB39C7C00DA8AB3 /* Reader-Cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD85B1FB39C7C00DA8AB3 /* Reader-Cancel.png */; };
+		238DD86E1FB39C7C00DA8AB3 /* Reader-Eraser-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD85C1FB39C7C00DA8AB3 /* Reader-Eraser-Selected.png */; };
+		238DD86F1FB39C7C00DA8AB3 /* Reader-Eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD85D1FB39C7C00DA8AB3 /* Reader-Eraser.png */; };
+		238DD8701FB39C7C00DA8AB3 /* Reader-Marker-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD85E1FB39C7C00DA8AB3 /* Reader-Marker-Selected.png */; };
+		238DD8711FB39C7C00DA8AB3 /* Reader-Marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD85F1FB39C7C00DA8AB3 /* Reader-Marker.png */; };
+		238DD8721FB39C7C00DA8AB3 /* Reader-Paint-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8601FB39C7C00DA8AB3 /* Reader-Paint-Selected.png */; };
+		238DD8731FB39C7C00DA8AB3 /* Reader-Paint.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8611FB39C7C00DA8AB3 /* Reader-Paint.png */; };
+		238DD8741FB39C7C00DA8AB3 /* Reader-Save.png in Resources */ = {isa = PBXBuildFile; fileRef = 238DD8621FB39C7C00DA8AB3 /* Reader-Save.png */; };
+		23CA57181FBE56C200F58C28 /* BezierLineDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CA57171FBE56C200F58C28 /* BezierLineDrawView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		238DD8261FB38B1100DA8AB3 /* DrawPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		238DD82A1FB38B1100DA8AB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		238DD82C1FB38B1100DA8AB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		238DD82D1FB38B1100DA8AB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		238DD82F1FB38B1100DA8AB3 /* DrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DrawViewController.h; path = ../DrawViewController.h; sourceTree = "<group>"; };
+		238DD8301FB38B1100DA8AB3 /* DrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DrawViewController.m; path = ../DrawViewController.m; sourceTree = "<group>"; };
+		238DD8331FB38B1100DA8AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		238DD8351FB38B1100DA8AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		238DD8381FB38B1100DA8AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		238DD83A1FB38B1100DA8AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		238DD8411FB38B4F00DA8AB3 /* BezierLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierLine.h; sourceTree = "<group>"; };
+		238DD8421FB38B4F00DA8AB3 /* BezierLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierLine.m; sourceTree = "<group>"; };
+		238DD8431FB38B4F00DA8AB3 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		238DD8441FB38B4F00DA8AB3 /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		238DD8471FB38B4F00DA8AB3 /* LineDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineDrawView.h; sourceTree = "<group>"; };
+		238DD8481FB38B4F00DA8AB3 /* LineDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineDrawView.m; sourceTree = "<group>"; };
+		238DD84E1FB3968F00DA8AB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		238DD8511FB39C7C00DA8AB3 /* Color-Black-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Color-Black-Selected.png"; sourceTree = "<group>"; };
+		238DD8521FB39C7C00DA8AB3 /* Color-Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Color-Black.png"; sourceTree = "<group>"; };
+		238DD8531FB39C7C00DA8AB3 /* Color-Blue-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Color-Blue-Selected.png"; sourceTree = "<group>"; };
+		238DD8541FB39C7C00DA8AB3 /* Color-Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Color-Blue.png"; sourceTree = "<group>"; };
+		238DD8551FB39C7C00DA8AB3 /* Color-Green-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Color-Green-Selected.png"; sourceTree = "<group>"; };
+		238DD8561FB39C7C00DA8AB3 /* Color-Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Color-Green.png"; sourceTree = "<group>"; };
+		238DD8571FB39C7C00DA8AB3 /* Color-Red-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Color-Red-Selected.png"; sourceTree = "<group>"; };
+		238DD8581FB39C7C00DA8AB3 /* Color-Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Color-Red.png"; sourceTree = "<group>"; };
+		238DD8591FB39C7C00DA8AB3 /* Color-Yellow-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Color-Yellow-Selected.png"; sourceTree = "<group>"; };
+		238DD85A1FB39C7C00DA8AB3 /* Color-Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Color-Yellow.png"; sourceTree = "<group>"; };
+		238DD85B1FB39C7C00DA8AB3 /* Reader-Cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Cancel.png"; sourceTree = "<group>"; };
+		238DD85C1FB39C7C00DA8AB3 /* Reader-Eraser-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Eraser-Selected.png"; sourceTree = "<group>"; };
+		238DD85D1FB39C7C00DA8AB3 /* Reader-Eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Eraser.png"; sourceTree = "<group>"; };
+		238DD85E1FB39C7C00DA8AB3 /* Reader-Marker-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Marker-Selected.png"; sourceTree = "<group>"; };
+		238DD85F1FB39C7C00DA8AB3 /* Reader-Marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Marker.png"; sourceTree = "<group>"; };
+		238DD8601FB39C7C00DA8AB3 /* Reader-Paint-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Paint-Selected.png"; sourceTree = "<group>"; };
+		238DD8611FB39C7C00DA8AB3 /* Reader-Paint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Paint.png"; sourceTree = "<group>"; };
+		238DD8621FB39C7C00DA8AB3 /* Reader-Save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Save.png"; sourceTree = "<group>"; };
+		23CA57161FBE56C200F58C28 /* BezierLineDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierLineDrawView.h; sourceTree = "<group>"; };
+		23CA57171FBE56C200F58C28 /* BezierLineDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierLineDrawView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		238DD8231FB38B1100DA8AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238DD84F1FB3968F00DA8AB3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		238DD81D1FB38B1100DA8AB3 = {
+			isa = PBXGroup;
+			children = (
+				238DD8281FB38B1100DA8AB3 /* DrawPaint */,
+				238DD8271FB38B1100DA8AB3 /* Products */,
+				238DD84D1FB3968F00DA8AB3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		238DD8271FB38B1100DA8AB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				238DD8261FB38B1100DA8AB3 /* DrawPaint.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		238DD8281FB38B1100DA8AB3 /* DrawPaint */ = {
+			isa = PBXGroup;
+			children = (
+				238DD8501FB39C7C00DA8AB3 /* Graphics */,
+				238DD8401FB38B4F00DA8AB3 /* DrawClass */,
+				238DD82C1FB38B1100DA8AB3 /* AppDelegate.h */,
+				238DD82D1FB38B1100DA8AB3 /* AppDelegate.m */,
+				238DD8321FB38B1100DA8AB3 /* Main.storyboard */,
+				238DD8351FB38B1100DA8AB3 /* Assets.xcassets */,
+				238DD8371FB38B1100DA8AB3 /* LaunchScreen.storyboard */,
+				238DD83A1FB38B1100DA8AB3 /* Info.plist */,
+				238DD8291FB38B1100DA8AB3 /* Supporting Files */,
+			);
+			path = DrawPaint;
+			sourceTree = "<group>";
+		};
+		238DD8291FB38B1100DA8AB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				238DD82A1FB38B1100DA8AB3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		238DD8401FB38B4F00DA8AB3 /* DrawClass */ = {
+			isa = PBXGroup;
+			children = (
+				238DD8411FB38B4F00DA8AB3 /* BezierLine.h */,
+				238DD8421FB38B4F00DA8AB3 /* BezierLine.m */,
+				238DD8431FB38B4F00DA8AB3 /* Line.h */,
+				238DD8441FB38B4F00DA8AB3 /* Line.m */,
+				238DD8471FB38B4F00DA8AB3 /* LineDrawView.h */,
+				238DD8481FB38B4F00DA8AB3 /* LineDrawView.m */,
+				23CA57161FBE56C200F58C28 /* BezierLineDrawView.h */,
+				23CA57171FBE56C200F58C28 /* BezierLineDrawView.m */,
+				238DD82F1FB38B1100DA8AB3 /* DrawViewController.h */,
+				238DD8301FB38B1100DA8AB3 /* DrawViewController.m */,
+			);
+			path = DrawClass;
+			sourceTree = "<group>";
+		};
+		238DD84D1FB3968F00DA8AB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				238DD84E1FB3968F00DA8AB3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		238DD8501FB39C7C00DA8AB3 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				238DD8511FB39C7C00DA8AB3 /* Color-Black-Selected.png */,
+				238DD8521FB39C7C00DA8AB3 /* Color-Black.png */,
+				238DD8531FB39C7C00DA8AB3 /* Color-Blue-Selected.png */,
+				238DD8541FB39C7C00DA8AB3 /* Color-Blue.png */,
+				238DD8551FB39C7C00DA8AB3 /* Color-Green-Selected.png */,
+				238DD8561FB39C7C00DA8AB3 /* Color-Green.png */,
+				238DD8571FB39C7C00DA8AB3 /* Color-Red-Selected.png */,
+				238DD8581FB39C7C00DA8AB3 /* Color-Red.png */,
+				238DD8591FB39C7C00DA8AB3 /* Color-Yellow-Selected.png */,
+				238DD85A1FB39C7C00DA8AB3 /* Color-Yellow.png */,
+				238DD85B1FB39C7C00DA8AB3 /* Reader-Cancel.png */,
+				238DD85C1FB39C7C00DA8AB3 /* Reader-Eraser-Selected.png */,
+				238DD85D1FB39C7C00DA8AB3 /* Reader-Eraser.png */,
+				238DD85E1FB39C7C00DA8AB3 /* Reader-Marker-Selected.png */,
+				238DD85F1FB39C7C00DA8AB3 /* Reader-Marker.png */,
+				238DD8601FB39C7C00DA8AB3 /* Reader-Paint-Selected.png */,
+				238DD8611FB39C7C00DA8AB3 /* Reader-Paint.png */,
+				238DD8621FB39C7C00DA8AB3 /* Reader-Save.png */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		238DD8251FB38B1100DA8AB3 /* DrawPaint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 238DD83D1FB38B1100DA8AB3 /* Build configuration list for PBXNativeTarget "DrawPaint" */;
+			buildPhases = (
+				238DD8221FB38B1100DA8AB3 /* Sources */,
+				238DD8231FB38B1100DA8AB3 /* Frameworks */,
+				238DD8241FB38B1100DA8AB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawPaint;
+			productName = DrawPaint;
+			productReference = 238DD8261FB38B1100DA8AB3 /* DrawPaint.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		238DD81E1FB38B1100DA8AB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = TaniaCB;
+				TargetAttributes = {
+					238DD8251FB38B1100DA8AB3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 238DD8211FB38B1100DA8AB3 /* Build configuration list for PBXProject "DrawPaint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 238DD81D1FB38B1100DA8AB3;
+			productRefGroup = 238DD8271FB38B1100DA8AB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				238DD8251FB38B1100DA8AB3 /* DrawPaint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		238DD8241FB38B1100DA8AB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238DD86D1FB39C7C00DA8AB3 /* Reader-Cancel.png in Resources */,
+				238DD86E1FB39C7C00DA8AB3 /* Reader-Eraser-Selected.png in Resources */,
+				238DD8681FB39C7C00DA8AB3 /* Color-Green.png in Resources */,
+				238DD8701FB39C7C00DA8AB3 /* Reader-Marker-Selected.png in Resources */,
+				238DD8661FB39C7C00DA8AB3 /* Color-Blue.png in Resources */,
+				238DD8651FB39C7C00DA8AB3 /* Color-Blue-Selected.png in Resources */,
+				238DD8391FB38B1100DA8AB3 /* LaunchScreen.storyboard in Resources */,
+				238DD8731FB39C7C00DA8AB3 /* Reader-Paint.png in Resources */,
+				238DD86F1FB39C7C00DA8AB3 /* Reader-Eraser.png in Resources */,
+				238DD8641FB39C7C00DA8AB3 /* Color-Black.png in Resources */,
+				238DD8361FB38B1100DA8AB3 /* Assets.xcassets in Resources */,
+				238DD86A1FB39C7C00DA8AB3 /* Color-Red.png in Resources */,
+				238DD8721FB39C7C00DA8AB3 /* Reader-Paint-Selected.png in Resources */,
+				238DD8691FB39C7C00DA8AB3 /* Color-Red-Selected.png in Resources */,
+				238DD8631FB39C7C00DA8AB3 /* Color-Black-Selected.png in Resources */,
+				238DD8671FB39C7C00DA8AB3 /* Color-Green-Selected.png in Resources */,
+				238DD8711FB39C7C00DA8AB3 /* Reader-Marker.png in Resources */,
+				238DD86B1FB39C7C00DA8AB3 /* Color-Yellow-Selected.png in Resources */,
+				238DD86C1FB39C7C00DA8AB3 /* Color-Yellow.png in Resources */,
+				238DD8341FB38B1100DA8AB3 /* Main.storyboard in Resources */,
+				238DD8741FB39C7C00DA8AB3 /* Reader-Save.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		238DD8221FB38B1100DA8AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238DD84A1FB38B4F00DA8AB3 /* Line.m in Sources */,
+				23CA57181FBE56C200F58C28 /* BezierLineDrawView.m in Sources */,
+				238DD84C1FB38B4F00DA8AB3 /* LineDrawView.m in Sources */,
+				238DD8491FB38B4F00DA8AB3 /* BezierLine.m in Sources */,
+				238DD8311FB38B1100DA8AB3 /* DrawViewController.m in Sources */,
+				238DD82E1FB38B1100DA8AB3 /* AppDelegate.m in Sources */,
+				238DD82B1FB38B1100DA8AB3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		238DD8321FB38B1100DA8AB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238DD8331FB38B1100DA8AB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		238DD8371FB38B1100DA8AB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238DD8381FB38B1100DA8AB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		238DD83B1FB38B1100DA8AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		238DD83C1FB38B1100DA8AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		238DD83E1FB38B1100DA8AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DrawPaint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DrawPaint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		238DD83F1FB38B1100DA8AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DrawPaint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DrawPaint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		238DD8211FB38B1100DA8AB3 /* Build configuration list for PBXProject "DrawPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238DD83B1FB38B1100DA8AB3 /* Debug */,
+				238DD83C1FB38B1100DA8AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		238DD83D1FB38B1100DA8AB3 /* Build configuration list for PBXNativeTarget "DrawPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238DD83E1FB38B1100DA8AB3 /* Debug */,
+				238DD83F1FB38B1100DA8AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 238DD81E1FB38B1100DA8AB3 /* Project object */;
+}

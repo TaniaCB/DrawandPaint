@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Draw View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DrawViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYT-pI-AKQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61Y-Y1-wTr">
+                                        <rect key="frame" x="20" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="bHU-Jn-mHX"/>
+                                            <constraint firstAttribute="height" constant="30" id="kjI-cj-hD9"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Reader-Paint.png"/>
+                                        <state key="selected" backgroundImage="Reader-Paint-Selected.png"/>
+                                        <connections>
+                                            <action selector="paintInView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9i2-RW-pbz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBd-bA-TpB">
+                                        <rect key="frame" x="70" y="10" width="30" height="30"/>
+                                        <state key="normal" backgroundImage="Reader-Marker.png"/>
+                                        <state key="selected" backgroundImage="Reader-Marker-Selected.png"/>
+                                        <connections>
+                                            <action selector="markerInView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SSm-Eh-5hP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5w-rs-gyz">
+                                        <rect key="frame" x="120" y="10" width="30" height="30"/>
+                                        <state key="normal" backgroundImage="Reader-Eraser.png"/>
+                                        <state key="selected" backgroundImage="Reader-Eraser-Selected.png"/>
+                                        <connections>
+                                            <action selector="eraserInView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gzj-nv-sxN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFH-bs-9tp">
+                                        <rect key="frame" x="325" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="3Dd-zX-Noo"/>
+                                            <constraint firstAttribute="height" constant="30" id="Fg3-0E-ly6"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Reader-Cancel.png"/>
+                                        <connections>
+                                            <action selector="clearView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uyj-2G-XmF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQe-ie-Qip">
+                                        <rect key="frame" x="275" y="10" width="30" height="30"/>
+                                        <state key="normal" backgroundImage="Reader-Save.png"/>
+                                        <state key="selected" backgroundImage="Reader-Save.png"/>
+                                        <connections>
+                                            <action selector="saveChanges:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOM-ZN-wa5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.91945514619246005" blue="0.90790344703021086" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="61Y-Y1-wTr" firstAttribute="centerY" secondItem="gYT-pI-AKQ" secondAttribute="centerY" id="0zj-D7-wea"/>
+                                    <constraint firstItem="61Y-Y1-wTr" firstAttribute="leading" secondItem="gYT-pI-AKQ" secondAttribute="leading" constant="20" id="4Ie-u4-1BL"/>
+                                    <constraint firstItem="nBd-bA-TpB" firstAttribute="leading" secondItem="61Y-Y1-wTr" secondAttribute="trailing" constant="20" id="7av-xY-KNr"/>
+                                    <constraint firstItem="R5w-rs-gyz" firstAttribute="height" secondItem="nBd-bA-TpB" secondAttribute="height" id="808-6y-LYu"/>
+                                    <constraint firstItem="nBd-bA-TpB" firstAttribute="height" secondItem="61Y-Y1-wTr" secondAttribute="height" id="8rk-tU-vRd"/>
+                                    <constraint firstItem="R5w-rs-gyz" firstAttribute="leading" secondItem="nBd-bA-TpB" secondAttribute="trailing" constant="20" id="I5P-yh-d24"/>
+                                    <constraint firstItem="IFH-bs-9tp" firstAttribute="centerY" secondItem="gYT-pI-AKQ" secondAttribute="centerY" id="P1Q-ab-w5D"/>
+                                    <constraint firstItem="nBd-bA-TpB" firstAttribute="width" secondItem="61Y-Y1-wTr" secondAttribute="width" id="TIb-Vt-eCL"/>
+                                    <constraint firstItem="cQe-ie-Qip" firstAttribute="height" secondItem="IFH-bs-9tp" secondAttribute="height" id="Wpn-3s-YYh"/>
+                                    <constraint firstAttribute="height" constant="50" id="Zgx-7v-fsk"/>
+                                    <constraint firstItem="R5w-rs-gyz" firstAttribute="centerY" secondItem="gYT-pI-AKQ" secondAttribute="centerY" id="fHg-N0-x3s"/>
+                                    <constraint firstAttribute="trailing" secondItem="IFH-bs-9tp" secondAttribute="trailing" constant="20" id="iKJ-bd-tpK"/>
+                                    <constraint firstItem="R5w-rs-gyz" firstAttribute="width" secondItem="nBd-bA-TpB" secondAttribute="width" id="jcn-fQ-pq7"/>
+                                    <constraint firstItem="cQe-ie-Qip" firstAttribute="centerY" secondItem="gYT-pI-AKQ" secondAttribute="centerY" id="oOz-qG-n4F"/>
+                                    <constraint firstItem="IFH-bs-9tp" firstAttribute="leading" secondItem="cQe-ie-Qip" secondAttribute="trailing" constant="20" id="r2V-fr-upz"/>
+                                    <constraint firstItem="nBd-bA-TpB" firstAttribute="centerY" secondItem="gYT-pI-AKQ" secondAttribute="centerY" id="sPf-k2-y1G"/>
+                                    <constraint firstItem="cQe-ie-Qip" firstAttribute="width" secondItem="IFH-bs-9tp" secondAttribute="width" id="ufj-6X-2Jb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98511355245378374" green="1" blue="0.97764273237189681" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gYT-pI-AKQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="S7Q-ne-zTy"/>
+                            <constraint firstItem="gYT-pI-AKQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z5A-aj-bGj"/>
+                            <constraint firstAttribute="trailing" secondItem="gYT-pI-AKQ" secondAttribute="trailing" id="aw0-U2-U6U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barView" destination="gYT-pI-AKQ" id="8DD-GB-cSP"/>
+                        <outlet property="clearButton" destination="IFH-bs-9tp" id="TN2-qh-31N"/>
+                        <outlet property="drawButton" destination="61Y-Y1-wTr" id="HnQ-h9-Yly"/>
+                        <outlet property="eraserButton" destination="R5w-rs-gyz" id="gyX-QF-3CH"/>
+                        <outlet property="markerButton" destination="nBd-bA-TpB" id="ABL-jf-IkP"/>
+                        <outlet property="saveButton" destination="cQe-ie-Qip" id="lsL-nJ-bdz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Reader-Cancel.png" width="48" height="48"/>
+        <image name="Reader-Eraser-Selected.png" width="48" height="48"/>
+        <image name="Reader-Eraser.png" width="48" height="48"/>
+        <image name="Reader-Marker-Selected.png" width="48" height="48"/>
+        <image name="Reader-Marker.png" width="48" height="48"/>
+        <image name="Reader-Paint-Selected.png" width="48" height="48"/>
+        <image name="Reader-Paint.png" width="48" height="48"/>
+        <image name="Reader-Save.png" width="36" height="36"/>
+    </resources>
+</document>

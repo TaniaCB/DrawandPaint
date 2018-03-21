@@ -1,2 +1,2 @@
 # Draw and Paint
-Objective C app about Draw &amp; Paint
+Objective C app about draw and paint
